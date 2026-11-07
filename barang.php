@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         WHERE id=?"
                     );
                     $stmt->bind_param(
-                        "sssidsi", $kode, $nama, $kategori,
+                        "sssisdi", $kode, $nama, $kategori,
                         $stok, $satuan, $harga, $id
                     );
                     $stmt->execute();
